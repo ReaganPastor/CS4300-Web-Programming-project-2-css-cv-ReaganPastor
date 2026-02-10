@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+nav p {
+  margin: 0;
+  font-weight: 600;
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+	border-top: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: #60a5fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: Geneva;
+  color:white;
+}
+
+header img {
+  border:2px solid darkcyan;
+  border-radius: 50%;
+}
+
+.address {
+  font-family: Geneva;
+  background-color: transparent;
+  color: #60a5fa;
+  text-align: center;
+}
+
+.tagline {
+  font-family: Geneva;
+  background-color: transparent;
+  color: #60a5fa;
+  text-align: center;
+}
+
+/************* Sections ********************/
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 40px 0;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h3 {
+  font-family: Geneva;
+  color: #60a5fa;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+section dl {
+  display: grid;
+}
+
+section ul {
+  font-family: Geneva;
+  background-color: #f5f7fa;
+}
+
+section a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img {
+  border:2px solid #60a5fa;
+  border-radius: 2px;
+  box-shadow: inset;
+}
+
+.card {
+  border:2px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: inset;
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card ul {
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-header {
+  padding: 48px 32px 32px;
+  background-color: #60a5fa;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  font-family: Geneva;
+}
+
+.contact-header h1 {
+  margin: 0 0 12px;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-header p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #60a5fa;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
