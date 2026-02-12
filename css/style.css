@@ -15,18 +15,71 @@ nav {
   border-bottom: 1px solid #e5e7eb;
 }
 
+.navbar {
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-name {
+  font-family: Geneva;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #60a5fa;
+}
+
+.nav-details {
+  font-family: Geneva;
+  font-size: 0.75rem;
+  color: #888888;
+  margin-top: 0.25rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+
 nav p {
   margin: 0;
   font-weight: 600;
 }
 
 nav a {
-  color: #2563eb;
+  color: grey;
   text-decoration: none;
+  position: relative;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease;
+}
+
+nav a::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* space below text */
+  width: 0;
+  height: 2px;
+  background-color: #60a5fa; /* underline color */
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
   text-decoration: underline;
+  width: 100%;
 }
 
 /***********************  Footer Section   **************************/
